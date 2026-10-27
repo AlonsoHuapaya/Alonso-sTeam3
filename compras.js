@@ -1,9 +1,31 @@
+/**
+ * Representa un producto de la tienda.
+ *
+ * Almacena el nombre, el precio y la cantidad de unidades
+ * de un producto y permite calcular su importe total.
+ */
+
 class Producto {
+ /**
+   * Crea un nuevo producto.
+   *
+   * @param {string} nombre - Nombre del producto.
+   * @param {number} precio - Precio por unidad del producto, en euros.
+   * @param {number} cantidad - Número de unidades del producto.
+   */
   constructor(nombre, precio, cantidad) {
     this.nombre = nombre;
     this.precio = precio;
     this.cantidad = cantidad;
   }
+ /**
+   * Calcula el importe total del producto.
+   *
+   * Multiplica el precio por unidad por la cantidad de unidades.
+   *
+   * @returns {number} Importe total del producto en euros.
+   */
+
 
   calcularTotal() {
     return this.precio * this.cantidad;
